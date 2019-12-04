@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+    /* https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans */
+}
+
+header.header {
+    background-image: url('../img/header.jpg');
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-attachment: fixed; */
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.btn {
+    border: 1px solid #007bff;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.section-first, .section-second, .section-third {
+    text-align: center;
+    padding: 85px 0px 100px 0;
+}
+
+h2#section-header {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.7em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+hr#section-hr {
+    margin: -20px;
+}
+
+header.section-header {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 0px 0px 70px 0px;
+}
+
+
+                                /* Header  */
+
+
+.header-container {
+    padding: 10px;
+}
+
+.header h1, span {
+    color: #007bff;
+}
+
+body {
+    margin: 0;
+}
+
+.header h1 {
+    font-size: 4.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 70px;
+    border-color: #007bff;
+}
+
+hr#header {
+    margin-top: -50px;
+}
+
+
+                                    /* Navigation  */
+
+
+
+.nav-container  {
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+ul.nav-container {
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+li.element-nav {
+    padding: 5px;
+}
+
+a.element {
+    color: #fff;
+    transition: all 0.4s;
+    padding: 11px 18px;
+    border: 0;
+    text-decoration: none;
+    
+}
+
+a.element:hover {
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.nav-container li {
+    list-style: none;
+}
+
+
+/* sekcja */
+
+img.about {
+    border-radius: 50%;
+}
+
+.section-container {
+    padding: 20px 0px;
+}
+
+p.section-container {
+    left: 0;
+    right: 0;
+    color : rgba(0, 0, 0, 0.6);
+    font-weight: 100;
+}
+
+.section-second {
+    background-color: #f2f1ed;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-wrapper .portfolio-item {
+    flex-basis: 24%;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.portfolio-wrapper .portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+.portfolio-wrapper .portfolio-item:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio-wrapper .portfolio-item h3 {
+    position: absolute;
+    background-color: rgba(0, 123, 255, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    line-height: 200px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 3em;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.portfolio-wrapper .portfolio-item h3:hover {
+    opacity: 1;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+textarea,
+form input:not([type="submit"]) {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(119, 119, 119, 0.6);
+}
+
+textarea {
+    flex-basis: 100%;
+}
+
+.social-icons {
+    margin-top: 75px;
+}
+
+.social-icons a i {
+    margin: 0 20px;
+    font-size: 2.5em;
+    transition: all 0.2s;
+    color: #007bff;
+}
+
+.social-icons a i:hover {
+    color: #777;
+}
+
+footer {
+    background-color: #f2f1ed;
+    padding: 30px 0;
+    text-align: center;
+}
